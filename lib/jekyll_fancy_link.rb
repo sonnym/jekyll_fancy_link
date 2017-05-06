@@ -36,7 +36,7 @@ module Jekyll
       return if @date.empty?
 
       icon = Liquid::Template.parse('{% octicon mirror %}').render(@context)
-      "<a href=\"https://archive.org/web/#{@date}/#{@url}\ target=\"_blank\" alt=\"Open on archive.org\" title=\"Open on archive.org\">#{icon}</a>"
+      "<a href=\"https://web.archive.org/web/#{@date}/#{@url}\" target=\"_blank\" alt=\"Open on archive.org\" title=\"Open on archive.org\">#{icon}</a>"
     end
   end
 
