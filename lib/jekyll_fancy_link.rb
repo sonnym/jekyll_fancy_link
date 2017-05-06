@@ -17,13 +17,15 @@ module Jekyll
 
       @url, @anchor = super.split("\n").reject(&:empty?)
 
+      binding.pry
+
       [ "<span>",
           "<a href=\"#{@url}\">#{@anchor}</a>",
           "<span style=\"vertical-align: super\">",
             external_link, archive_link,
           "</span>",
         "</span>"
-      ].join("\n")
+      ].join(" ")
     end
 
     private
