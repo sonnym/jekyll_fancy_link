@@ -1,5 +1,4 @@
 require 'jekyll-octicons'
-require 'pry'
 
 module Jekyll
   class FancyLinkTag < Liquid::Block
@@ -16,8 +15,6 @@ module Jekyll
       @context = context
 
       @url, @anchor = super.split("\n").reject(&:empty?)
-
-      binding.pry
 
       [ "<span>",
           "<a href=\"#{@url}\">#{@anchor}</a>",
