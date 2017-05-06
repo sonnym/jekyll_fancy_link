@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'jekyll_fancy_link'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.summary = 'Anchor tags with icons for new window and internet archive.'
   s.author = 'Sonny Michaud'
   s.email = 'michaud.sonny@gmail.com'
