@@ -14,7 +14,7 @@ module Jekyll
     def render(context)
       @context = context
 
-      @url, @anchor = super.split("\n").reject(&:empty?)
+      @url, @anchor = super.split("\n").reject(&:empty?).map(&:strip)
 
       [ "<span>",
           "<a href=\"#{@url}\">#{@anchor}</a>",
