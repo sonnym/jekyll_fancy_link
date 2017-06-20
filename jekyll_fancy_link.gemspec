@@ -5,10 +5,11 @@ Gem::Specification.new do |s|
   s.author = 'Sonny Michaud'
   s.email = 'michaud.sonny@gmail.com'
   s.license = 'MIT'
+  s.homepage = 'https://github.com/sonnym/jekyll_fancy_link'
   s.files = ['lib/jekyll_fancy_link.rb']
 
   s.add_runtime_dependency('jekyll', '~> 3')
   s.add_runtime_dependency('jekyll-octicons', '~> 3')
 
-  s.add_development_dependency('pry')
+  s.add_development_dependency('pry', '~> 0')
 end
