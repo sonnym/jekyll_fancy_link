@@ -16,9 +16,9 @@ module Jekyll
 
       @url, @anchor = super.split("\n").reject(&:empty?).map(&:strip)
 
-      [ "<span>",
+      [ '<span class="fancylink">',
           "<a href=\"#{@url}\">#{@anchor}</a>",
-          "<span style=\"vertical-align: super\">",
+          "<span>",
             external_link, archive_link,
           "</span>",
         "</span>"
